@@ -45,19 +45,19 @@ const Hero = () => {
         <div className="max-w-5xl mx-auto">
           {/* Main Heading - Premium Power */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-[1.1] tracking-tight">
-            <span className="block mb-1 drop-shadow-2xl animate-fade-in-up">ПРЕМИУМ</span>
-            <span className="block mb-1 bg-gradient-to-r from-white via-brand-blue-light to-white bg-clip-text text-transparent drop-shadow-2xl animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+            <span className="block mb-1 drop-shadow-[0_0_20px_rgba(255,255,255,0.8)] animate-fade-in-up">ПРЕМИУМ</span>
+            <span className="block mb-1 text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.6)] animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
               ТРАНСПОРТ
             </span>
-            <span className="block text-brand-blue-accent drop-shadow-xl animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <span className="block text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
               С МОЩ
             </span>
           </h1>
 
           {/* Subtitle - Premium Message */}
-          <p className="text-lg sm:text-xl md:text-2xl font-semibold text-white/95 mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-lg animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+          <p className="text-lg sm:text-xl md:text-2xl font-semibold text-white mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-lg animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
             <span className="block mb-1">Прецизност. Професионализъм. Движение.</span>
-            <span className="block text-brand-blue-light font-bold text-base sm:text-lg md:text-xl">Индустриална сила, която вдъхва доверие.</span>
+            <span className="block text-white font-bold text-base sm:text-lg md:text-xl">Индустриална сила, която вдъхва доверие.</span>
           </p>
 
           {/* CTA Buttons - Premium Power */}
@@ -87,15 +87,15 @@ const Hero = () => {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
             <div className="text-center p-4 sm:p-5 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:bg-white/10 transition-all duration-300">
               <div className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-2 drop-shadow-lg">15+</div>
-              <div className="text-brand-blue-light font-bold text-sm sm:text-base uppercase tracking-wide">Години опит</div>
+              <div className="text-white font-bold text-sm sm:text-base uppercase tracking-wide">Години опит</div>
             </div>
             <div className="text-center p-4 sm:p-5 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:bg-white/10 transition-all duration-300">
               <div className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-2 drop-shadow-lg">500+</div>
-              <div className="text-brand-blue-light font-bold text-sm sm:text-base uppercase tracking-wide">Успешни проекта</div>
+              <div className="text-white font-bold text-sm sm:text-base uppercase tracking-wide">Успешни проекта</div>
             </div>
             <div className="text-center p-4 sm:p-5 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:bg-white/10 transition-all duration-300">
               <div className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-2 drop-shadow-lg">24/7</div>
-              <div className="text-brand-blue-light font-bold text-sm sm:text-base uppercase tracking-wide">Доставка</div>
+              <div className="text-white font-bold text-sm sm:text-base uppercase tracking-wide">Доставка</div>
             </div>
           </div>
         </div>

@@ -1,7 +1,9 @@
 import { useMemo, useState } from 'react'
+import MobileGalleryCarousel from './MobileGalleryCarousel'
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null)
+  const [visibleCount, setVisibleCount] = useState(12)
 
   // Автоматично зареждане на всички изображения от src/assets/images
   // Поддържани формати: jpg, jpeg, png, webp
@@ -45,6 +47,19 @@ const Gallery = () => {
     ? galleryImages
     : galleryImages.filter(img => img.category === activeCategory)
 
+  // Reset visible count when category changes
+  const handleCategoryChange = (category) => {
+    setActiveCategory(category)
+    setVisibleCount(12)
+  }
+
+  const visibleImages = filteredImages.slice(0, visibleCount)
+  const hasMore = filteredImages.length > visibleCount
+
+  const loadMore = () => {
+    setVisibleCount(prev => prev + 12)
+  }
+
   const openModal = (image) => {
     setSelectedImage(image)
   }
@@ -83,7 +98,7 @@ const Gallery = () => {
               {categories.map((category) => (
                 <button
                   key={category}
-                  onClick={() => setActiveCategory(category)}
+                  onClick={() => handleCategoryChange(category)}
                   className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 ${
                     activeCategory === category
                       ? 'bg-brand-blue text-white shadow-lg animate-glow'
@@ -95,9 +110,15 @@ const Gallery = () => {
               ))}
             </div>
 
-        {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {filteredImages.map((image) => (
+        {/* Mobile Swiper Carousel */}
+        <MobileGalleryCarousel 
+          images={visibleImages} 
+          onImageClick={openModal}
+        />
+
+        {/* Desktop Grid */}
+        <div className="hidden md:grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {visibleImages.map((image) => (
             <div
               key={image.id}
               className="group relative overflow-hidden rounded-xl border border-brand-blue/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer animate-fade-in-up"
@@ -116,6 +137,24 @@ const Gallery = () => {
 
             </div>
           ))}
+        </div>
+
+        {/* Load More Button */}
+        {hasMore && (
+          <div className="text-center mt-12">
+            <button
+              onClick={loadMore}
+              className="group relative bg-brand-blue text-white px-10 py-4 rounded-xl font-black text-lg uppercase tracking-wide hover:bg-brand-blue-dark transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-[0_0_30px_rgba(10,46,92,0.8)] border-2 border-brand-blue-accent/50"
+            >
+              <span className="relative z-10">Покажи още ({filteredImages.length - visibleCount} остават)</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-brand-blue-accent to-brand-blue opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+            </button>
+          </div>
+        )}
+
+        {/* Image Count Info */}
+        <div className="text-center mt-8 text-gray-600 font-semibold">
+          Показване на {visibleImages.length} от {filteredImages.length} снимки
         </div>
 
         {/* Modal */}

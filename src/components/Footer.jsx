@@ -71,7 +71,7 @@ const Footer = () => {
             </p>
             
             {/* Contact Info */}
-            <div className="space-y-2 text-sm text-gray-300">
+            <div className="space-y-2 text-sm text-white/80">
               <p>📞 359 886 010 730</p>
               <p>📍Индустриална зона, Варна 9000</p>
             </div>
@@ -99,7 +99,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <a 
                     href={link.href}
-                    className="text-gray-300 hover:text-white transition-colors duration-300"
+                    className="text-white/80 hover:text-white transition-colors duration-300"
                   >
                     {link.name}
                   </a>
@@ -110,13 +110,13 @@ const Footer = () => {
 
           {/* Company */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-blue-400">Компания</h4>
+            <h4 className="text-lg font-black mb-4 text-brand-blue-accent uppercase tracking-wide">Компания</h4>
             <ul className="space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
                   <a 
                     href={link.href}
-                    className="text-gray-300 hover:text-white transition-colors duration-300"
+                    className="text-white/80 hover:text-white transition-colors duration-300"
                   >
                     {link.name}
                   </a>
@@ -127,13 +127,13 @@ const Footer = () => {
 
           {/* Legal */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-blue-400">Правна информация</h4>
+            <h4 className="text-lg font-black mb-4 text-brand-blue-accent uppercase tracking-wide">Правна информация</h4>
             <ul className="space-y-2">
               {footerLinks.legal.map((link) => (
                 <li key={link.name}>
                   <a 
                     href={link.href}
-                    className="text-gray-300 hover:text-white transition-colors duration-300"
+                    className="text-white/80 hover:text-white transition-colors duration-300"
                   >
                     {link.name}
                   </a>
@@ -148,11 +148,11 @@ const Footer = () => {
       <div className="bg-gradient-to-r from-brand-blue-dark/80 to-brand-steel/80 backdrop-blur-sm border-t border-brand-blue-accent/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-sm text-gray-300">
+            <div className="text-sm text-white/80">
               © {currentYear} Kamion Kran Varna. Всички права запазени.
             </div>
             
-            <div className="flex items-center space-x-6 text-sm text-gray-300">
+            <div className="flex items-center space-x-6 text-sm text-white/80">
               <span>Изработено с ❤️ в България</span>
               <div className="flex items-center space-x-2">
                 <span>🇧🇬</span>
