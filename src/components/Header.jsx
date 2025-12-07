@@ -34,13 +34,11 @@ const Header = ({ activeSection, scrollToSection }) => {
                 onClick={() => scrollToSection('home')}
                 className="transition-opacity duration-200 hover:opacity-80 bg-transparent border-0 p-0 m-0 flex items-center h-full"
               >
-                <div className="bg-white rounded-full p-[0.5px]">
-                  <img 
-                    src={logo} 
-                    alt="GM TRANS GROUP Logo" 
-                    className="h-[48px] w-[48px] sm:h-[56px] sm:w-[56px] lg:h-[64px] lg:w-[64px] object-contain rounded-full block"
-                  />
-                </div>
+                <img 
+                  src={logo} 
+                  alt="GM TRANS GROUP Logo" 
+                  className="h-[144px] w-[144px] sm:h-[160px] sm:w-[160px] lg:h-[184px] lg:w-[184px] object-contain block"
+                />
               </button>
             </div>
 
@@ -65,9 +63,9 @@ const Header = ({ activeSection, scrollToSection }) => {
             <div className="md:hidden">
               <button 
                 onClick={() => setIsMobileMenuOpen(true)}
-                className={`p-2 rounded-md transition-colors duration-200 text-white hover:text-brand-blue-accent hover:bg-white/10`}
+                className="p-2 rounded-md transition-all duration-200 bg-brand-blue border-2 border-white hover:bg-brand-blue-dark hover:scale-105"
               >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               </button>

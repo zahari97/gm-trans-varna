@@ -16,6 +16,8 @@ const Hero = () => {
           backgroundRepeat: 'no-repeat'
         }}
         aria-hidden="true"
+        role="img"
+        aria-label="Камион с кран за транспортни услуги във Варна"
       ></div>
 
       {/* Dark overlay for depth */}
@@ -43,44 +45,48 @@ const Hero = () => {
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
         <div className="max-w-5xl mx-auto">
-          {/* Main Heading - Premium Power */}
+          {/* Main Heading - SEO Optimized H1 */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-[1.1] tracking-tight">
-            <span className="block mb-1 drop-shadow-[0_0_20px_rgba(255,255,255,0.8)] animate-fade-in-up">ПРЕМИУМ</span>
+            <span className="block mb-1 drop-shadow-[0_0_20px_rgba(255,255,255,0.8)] animate-fade-in-up">Услуги с кран</span>
             <span className="block mb-1 text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.6)] animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-              ТРАНСПОРТ
+              и транспорт
             </span>
             <span className="block text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-              С МОЩ
+              във Варна
             </span>
           </h1>
 
-          {/* Subtitle - Premium Message */}
+          {/* Subtitle - SEO Optimized */}
           <p className="text-lg sm:text-xl md:text-2xl font-semibold text-white mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-lg animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-            <span className="block mb-1">Прецизност. Професионализъм. Движение.</span>
-            <span className="block text-white font-bold text-base sm:text-lg md:text-xl">Индустриална сила, която вдъхва доверие.</span>
+            <span className="block mb-1">GM Transport Варна - професионални услуги с автокран, транспорт на товари и вдигане на контейнери.</span>
+            <span className="block text-white font-bold text-base sm:text-lg md:text-xl">Камион под наем, мини багер и кранови услуги във Варна и региона. 15+ години опит, 24/7 наличност.</span>
           </p>
 
           {/* CTA Buttons - Premium Power */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-            <button 
-              onClick={() => {
+            <a 
+              href="#services"
+              onClick={(e) => {
+                e.preventDefault()
                 const element = document.getElementById('services')
                 element?.scrollIntoView({ behavior: 'smooth' })
               }}
-              className="group relative bg-brand-blue text-white px-8 sm:px-10 py-4 rounded-lg font-black text-base sm:text-lg uppercase tracking-wide hover:bg-brand-blue-dark transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-[0_0_30px_rgba(10,46,92,0.8)] border-2 border-brand-blue-accent/50 overflow-hidden"
+              className="inline-block group relative bg-brand-blue text-white px-8 sm:px-10 py-4 rounded-lg font-black text-base sm:text-lg uppercase tracking-wide hover:bg-brand-blue-dark transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-[0_0_30px_rgba(10,46,92,0.8)] border-2 border-brand-blue-accent/50 overflow-hidden"
             >
-              <span className="relative z-10">Нашите услуги</span>
+              <span className="relative z-10">Нашите услуги с кран</span>
               <div className="absolute inset-0 bg-gradient-to-r from-brand-blue-accent to-brand-blue opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </button>
-            <button 
-              onClick={() => {
+            </a>
+            <a 
+              href="#contacts"
+              onClick={(e) => {
+                e.preventDefault()
                 const element = document.getElementById('contacts')
                 element?.scrollIntoView({ behavior: 'smooth' })
               }}
-              className="group relative bg-white text-brand-blue-dark px-8 sm:px-10 py-4 rounded-lg font-black text-base sm:text-lg uppercase tracking-wide hover:bg-brand-blue-light hover:text-white transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] border-2 border-white/50"
+              className="inline-block group relative bg-white text-brand-blue-dark px-8 sm:px-10 py-4 rounded-lg font-black text-base sm:text-lg uppercase tracking-wide hover:bg-brand-blue-light hover:text-white transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] border-2 border-white/50"
             >
               <span className="relative z-10">Обади се сега</span>
-            </button>
+            </a>
           </div>
 
           {/* Stats - Premium Display */}

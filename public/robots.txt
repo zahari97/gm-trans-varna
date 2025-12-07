@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://kamion-kran-varna.bg/sitemap.xml
+
+# Disallow admin or private areas if any
+Disallow: /admin/
+Disallow: /private/
+
+# Allow all images
+Allow: /assets/
+Allow: /images/
+

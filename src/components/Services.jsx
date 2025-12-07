@@ -11,8 +11,8 @@ const Services = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
         </svg>
       ),
-      title: "Повдигане на товари",
-      description: "Професионално повдигане на тежки товари с модерни кранове до 100 тона капацитет.",
+      title: "Услуги с кран Варна",
+      description: "Професионално повдигане на товари с автокран във Варна. Модерни кранове до 100 тона капацитет за вдигане на контейнери, строителни материали и тежки товари.",
       bgImage: bg
     },
     {
@@ -21,8 +21,8 @@ const Services = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
         </svg>
       ),
-      title: "Транспортиране",
-      description: "Безопасно транспортиране на големи и тежки предмети в цяла България.",
+      title: "Транспортни услуги Варна",
+      description: "Превоз на товари във Варна и цяла България. Камион под наем с кран за безопасно транспортиране на големи и тежки предмети, контейнери и строителни материали.",
       bgImage: mesteneImg
     },
     {
@@ -31,8 +31,8 @@ const Services = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
         </svg>
       ),
-      title: "Монтаж и демонтаж",
-      description: "Специализирани услуги за монтаж и демонтаж на индустриално оборудване.",
+      title: "Монтаж и демонтаж Варна",
+      description: "Професионален монтаж и демонтаж на индустриално оборудване във Варна. Специализирани услуги за преместване и инсталиране на машини и техника.",
       bgImage: montajImg
     },
     {
@@ -77,13 +77,13 @@ const Services = () => {
             <div className="text-sm font-black uppercase tracking-[0.3em] text-brand-blue mb-6">Премиум услуги</div>
           </div>
           <h2 className="text-5xl sm:text-6xl lg:text-7xl font-black text-gray-900 mb-8 tracking-tight">
-            <span className="block">МОЩ</span>
+            <span className="block">Кранови и транспортни</span>
             <span className="block bg-gradient-to-r from-brand-blue via-brand-blue-accent to-brand-blue bg-clip-text text-transparent">
-              И ПРЕЦИЗНОСТ
+              услуги във Варна
             </span>
           </h2>
           <p className="text-xl sm:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed font-semibold">
-            Индустриална сила, подкрепена от професионализъм и най-модерно оборудване
+            Професионални услуги с кран във Варна - автокран под наем, транспорт на товари, вдигане на контейнери, мини багер. GM Transport предлага пълна гама кранови и транспортни услуги в региона на Варна.
           </p>
         </div>
 
@@ -92,14 +92,14 @@ const Services = () => {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="group relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border-2 border-gray-200 hover:border-brand-blue-accent overflow-hidden"
+              className="group relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border-2 border-gray-200 hover:border-brand-blue-accent overflow-hidden flex flex-col items-center"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Premium gradient overlay on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-brand-blue/0 via-brand-blue/0 to-brand-blue-dark/0 group-hover:from-brand-blue/5 group-hover:via-brand-blue-accent/5 group-hover:to-brand-blue-dark/5 transition-all duration-500"></div>
               
               {/* Icon - Industrial Premium */}
-              <div className="relative z-10 inline-flex items-center justify-center w-28 h-28 bg-gradient-to-br from-brand-blue via-brand-blue-accent to-brand-blue-dark text-white rounded-2xl mb-8 shadow-2xl group-hover:shadow-[0_0_30px_rgba(10,46,92,0.5)] group-hover:scale-110 transition-all duration-500">
+              <div className="relative z-10 flex items-center justify-center w-28 h-28 bg-gradient-to-br from-brand-blue via-brand-blue-accent to-brand-blue-dark text-white rounded-2xl mb-8 shadow-2xl group-hover:shadow-[0_0_30px_rgba(10,46,92,0.5)] group-hover:scale-110 transition-all duration-500">
                 <div className="flex items-center justify-center w-full h-full">
                   {service.icon}
                 </div>
@@ -108,11 +108,11 @@ const Services = () => {
               </div>
 
               {/* Content */}
-              <div className="relative z-10">
-                <h3 className="text-2xl sm:text-3xl font-black text-gray-900 mb-5 group-hover:text-brand-blue transition-colors duration-300 text-center uppercase tracking-tight">
+              <div className="relative z-10 flex flex-col items-center text-center">
+                <h3 className="text-2xl sm:text-3xl font-black text-gray-900 mb-5 group-hover:text-brand-blue transition-colors duration-300 tracking-tight">
                   {service.title}
                 </h3>
-                <p className="text-base sm:text-lg text-gray-600 leading-relaxed text-center font-medium">
+                <p className="text-base sm:text-lg text-gray-600 leading-relaxed font-medium">
                   {service.description}
                 </p>
               </div>
@@ -136,21 +136,23 @@ const Services = () => {
             
             <div className="relative z-10">
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-6 tracking-tight uppercase">
-                Готови за следващия проект?
+                Нуждаете се от кран или транспорт във Варна?
               </h3>
               <p className="text-lg sm:text-xl text-white/90 mb-10 max-w-3xl mx-auto leading-relaxed font-semibold">
-                Премиум услуги с професионален подход. Свържете се сега за индивидуална консултация.
+                Свържете се с GM Transport Варна за професионални услуги с кран, превоз на товари и вдигане на контейнери. Безплатна консултация и индивидуална оферта.
               </p>
-              <button 
-                onClick={() => {
+              <a 
+                href="#contacts"
+                onClick={(e) => {
+                  e.preventDefault()
                   const element = document.getElementById('contacts')
                   element?.scrollIntoView({ behavior: 'smooth' })
                 }}
-                className="group relative bg-white text-brand-blue-dark px-12 py-5 rounded-xl font-black text-lg uppercase tracking-wide hover:bg-brand-blue-accent hover:text-white transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-[0_0_40px_rgba(255,255,255,0.3)] border-2 border-white/50"
+                className="inline-block group relative bg-white text-brand-blue-dark px-12 py-5 rounded-xl font-black text-lg uppercase tracking-wide hover:bg-brand-blue-accent hover:text-white transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-[0_0_40px_rgba(255,255,255,0.3)] border-2 border-white/50"
               >
                 <span className="relative z-10">Свържи се сега</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-brand-blue-accent to-brand-blue opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
-              </button>
+              </a>
             </div>
           </div>
         </div>

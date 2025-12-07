@@ -28,9 +28,9 @@ const About = () => {
                 <div className="text-sm font-black uppercase tracking-[0.3em] text-brand-blue mb-6">Премиум бранд</div>
               </div>
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-6 tracking-tight">
-                <span className="block">ПРОФЕСИОНАЛИЗЪМ</span>
+                <span className="block">GM Transport Варна</span>
                 <span className="block bg-gradient-to-r from-brand-blue via-brand-blue-accent to-brand-blue bg-clip-text text-transparent">
-                  С ДОВЕРИЕ
+                  Професионални кранови услуги
                 </span>
               </h2>
             </div>
@@ -38,23 +38,21 @@ const About = () => {
             {/* Main Content - Premium */}
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p className="text-lg sm:text-xl font-semibold">
-                <strong className="text-brand-blue-dark font-black">GM TRANS GROUP</strong> е премиум транспортен бранд, който комбинира индустриална мощ с безупречна прецизност. 
-                С над 15 години опит, ние гарантираме професионални услуги, които вдъхват доверие.
+                <strong className="text-brand-blue-dark font-black">GM TRANS GROUP</strong> е водеща компания за <a href="#services" className="text-brand-blue hover:text-brand-blue-accent underline font-bold">услуги с кран във Варна</a> и транспортни услуги. С над 15 години опит в региона на Варна, ние предлагаме професионални услуги с автокран, превоз на товари и вдигане на контейнери.
               </p>
               
               <p className="text-base sm:text-lg">
-                Нашият екип от експерти работи с най-модерното оборудване и следва най-високите стандарти за безопасност и качество. 
-                Всяка операция е изпълнена с внимание към детайла и професионален подход.
+                Нашият екип от експерти работи с най-модерното краново оборудване и следва най-високите стандарти за безопасност и качество. Специализирани сме в <a href="#services" className="text-brand-blue hover:text-brand-blue-accent underline font-semibold">услуги с кран Варна</a>, транспорт на товари и товаро-разтоварни дейности.
               </p>
               
               <p className="text-base sm:text-lg">
-                Премиум качество, подкрепено от надеждност и конкурентни цени. Безопасността и удовлетвореността на клиентите са в основата на всичко, което правим.
+                Предлагаме пълна гама услуги: камион под наем Варна, мини багер, вдигане на контейнери и монтажни работи. Безопасността и удовлетвореността на клиентите са в основата на всичко, което правим. <a href="#contacts" className="text-brand-blue hover:text-brand-blue-accent underline font-semibold">Свържете се с нас</a> за безплатна консултация.
               </p>
             </div>
 
             {/* Features List - Premium */}
             <div className="mt-10">
-              <h3 className="text-2xl font-black text-gray-900 mb-6 uppercase tracking-tight">Предимства:</h3>
+              <h3 className="text-2xl font-black text-gray-900 mb-6 tracking-tight">Защо да изберете GM Transport Варна:</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-start space-x-4 p-3 rounded-lg hover:bg-brand-blue/5 transition-colors duration-300">
@@ -122,14 +120,14 @@ const About = () => {
             <div className="inline-block mb-8">
               <div className="h-1.5 w-32 bg-gradient-to-r from-brand-blue to-brand-blue-accent mx-auto mb-4"></div>
             </div>
-            <h3 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 mb-8 tracking-tight uppercase">
-              Нашата мисия
+            <h3 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 mb-8 tracking-tight">
+              Нашата мисия - Кранови услуги във Варна
             </h3>
             <div className="relative bg-gradient-to-br from-brand-blue/10 via-white to-brand-steel/5 rounded-2xl p-10 sm:p-12 border-2 border-brand-blue/20 shadow-xl">
               <p className="text-xl sm:text-2xl text-gray-700 leading-relaxed font-semibold italic">
-                "Да бъдем <strong className="text-brand-blue-dark not-italic">най-надеждният</strong> партньор за транспортен услуги, като предоставяме премиум качество, 
-                безопасност и професионализъм във всяка операция. Стремим се да надхвърляме очакванията 
-                на нашите клиенти с индустриална мощ и прецизност."
+                "Да бъдем <strong className="text-brand-blue-dark not-italic">най-надеждният</strong> партньор за услуги с кран и транспорт във Варна, като предоставяме премиум качество, 
+                безопасност и професионализъм във всяка операция. Специализирани сме в кранови услуги, превоз на товари, вдигане на контейнери и камион под наем във Варна. 
+                Стремим се да надхвърляме очакванията на нашите клиенти с индустриална мощ и прецизност."
               </p>
             </div>
           </div>

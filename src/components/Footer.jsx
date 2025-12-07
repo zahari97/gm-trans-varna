@@ -72,7 +72,8 @@ const Footer = () => {
             
             {/* Contact Info */}
             <div className="space-y-2 text-sm text-white/80">
-              <p>📞 359 886 010 730</p>
+              <p>📞 <a href="tel:+359886010737" className="hover:text-white underline">359 886 010 737</a></p>
+              <p>📞 <a href="tel:+359988873730" className="hover:text-white underline">359 988 873 730</a></p>
               <p>📍Индустриална зона, Варна 9000</p>
             </div>
 

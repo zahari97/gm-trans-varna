@@ -18,8 +18,18 @@ const Contacts = () => {
         </svg>
       ),
       title: "Телефон",
-      details: "359 886 010 730",
-      link: "tel:+359886010730"
+      details: "359 886 010 737",
+      link: "tel:+359886010737"
+    },
+    {
+      icon: (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+        </svg>
+      ),
+      title: "Телефон 2",
+      details: "359 988 873 730",
+      link: "tel:+359988873730"
     },
     
     {
@@ -48,20 +58,20 @@ const Contacts = () => {
             <div className="text-sm font-black uppercase tracking-[0.3em] text-brand-blue mb-6">Свържи се</div>
           </div>
           <h2 className="text-5xl sm:text-6xl lg:text-7xl font-black text-gray-900 mb-8 tracking-tight">
-            <span className="block">КОНТАКТ</span>
+            <span className="block">Контакти</span>
             <span className="block bg-gradient-to-r from-brand-blue via-brand-blue-accent to-brand-blue bg-clip-text text-transparent">
-              С НАС
+              GM Transport Варна
             </span>
           </h2>
           <p className="text-xl sm:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed font-semibold">
-            Готови сме да отговорим на всички ваши въпроси и да предоставим премиум персонализирана оферта
+            Свържете се с нас за услуги с кран във Варна, транспорт на товари, вдигане на контейнери и камион под наем. Безплатна консултация и индивидуална оферта за всички кранови и транспортни услуги.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Contact Information */}
           <div>
-            <h3 className="text-3xl font-bold mb-8 text-gray-900">Контактна информация</h3>
+            <h3 className="text-3xl font-bold mb-8 text-gray-900">Контактна информация - Услуги с кран Варна</h3>
             
             <div className="space-y-6">
               {contactInfo.map((contact, index) => (
@@ -134,14 +144,14 @@ const Contacts = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a 
-                    href="tel:+359886010730"
+                    href="tel:+359886010737"
                     className="group relative bg-white text-brand-blue-dark px-10 py-5 rounded-xl font-black text-lg uppercase tracking-wide hover:bg-brand-blue-accent hover:text-white transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] text-center border-2 border-white/50"
                   >
                     <span className="relative z-10">Обади се сега</span>
                     <div className="absolute inset-0 bg-gradient-to-r from-brand-blue-accent to-brand-blue opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
                   </a>
                   <a 
-                    href="https://wa.me/359886010730"
+                    href="https://wa.me/359886010737"
                     className="bg-green-600 text-white px-10 py-5 rounded-xl font-black text-lg uppercase tracking-wide hover:bg-green-700 transform hover:scale-105 transition-all duration-300 shadow-2xl text-center border-2 border-green-500/50"
                   >
                     WhatsApp

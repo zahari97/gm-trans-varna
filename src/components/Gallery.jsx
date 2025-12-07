@@ -24,17 +24,29 @@ const Gallery = () => {
     return 'Други'
   }
 
+  const getSEOAltText = (path, category) => {
+    const lower = path.toLowerCase()
+    if (lower.includes('montaj') || lower.includes('demontaj')) {
+      return `Монтаж и демонтаж с кран във Варна - GM Transport Варна`
+    }
+    if (lower.includes('mestene') || lower.includes('transport')) {
+      return `Транспорт на товари с камион във Варна - услуги с кран Варна`
+    }
+    return `Кранови услуги във Варна - автокран под наем GM Transport`
+  }
+
   const galleryImages = useMemo(() => {
     let idCounter = 1
     return Object.entries(imageModules).map(([path, mod]) => {
       const src = mod.default || ''
       const title = humanize(path)
+      const category = normalizeCategory(path)
       return {
         id: idCounter++,
         src,
-        alt: title,
+        alt: getSEOAltText(path, category),
         title,
-        category: normalizeCategory(path)
+        category
       }
     })
   }, [])
@@ -86,10 +98,10 @@ const Gallery = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Нашата <span className="text-brand-blue">галерия</span>
+            Галерия - <span className="text-brand-blue">Услуги с кран Варна</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Разгледайте нашите успешни проекти и модерното краново оборудване
+            Разгледайте нашите успешни проекти с кран във Варна - автокран под наем, транспорт на товари, вдигане на контейнери и монтажни работи. GM Transport Варна - професионални кранови услуги.
           </p>
         </div>
 
